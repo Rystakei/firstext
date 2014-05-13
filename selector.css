@@ -1,0 +1,7 @@
+.selections table{
+	border: black solid 5px; 
+}
+
+.selections td{
+	border: gray solid 1px;
+}

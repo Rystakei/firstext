@@ -6,8 +6,7 @@ function injectedMethod (tab, method, callback) {
   });
 }
 
-// Get background-color values from the current tab
-// and open them in Colorpeek.
+//Grab the selected text
 function getSelection (tab) {
   alert("getSelection is running");
   injectedMethod(tab, 'getSelectionText', function (response){
@@ -15,6 +14,5 @@ function getSelection (tab) {
   })
 }
 // When the browser action is clicked, call the
-// getBgColors function.
+// getSelection function.
  chrome.browserAction.onClicked.addListener(getSelection);
-chrome.browserAction.onClicked.addListener(getSelectionText);
